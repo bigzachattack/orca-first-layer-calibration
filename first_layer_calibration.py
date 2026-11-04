@@ -111,7 +111,6 @@ Patch geometry, stated so it can be checked, not guessed:
 """
 
 import json
-import math
 import os
 import uuid
 import zipfile
