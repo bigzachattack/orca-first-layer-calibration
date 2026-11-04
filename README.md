@@ -1,7 +1,5 @@
 # Orca First-Layer Calibration
 
-Author: Zachary Jones
-
 Version 0.3.6.  Requires Orca Slicer 2.5.0-rc or later, with the plugin system enabled.  Tested with Voron Trident 300 and Voron Switchwire 250, in Klipper setups.
 
 ## What it does
@@ -74,6 +72,10 @@ Orca emits between-objects G-code only after an object finishes, not before the 
 - Run from the repository root: `python3 -m unittest discover -s tests -v`.
 - Coverage: step labels and G-code, append-only reruns, step changes, literal backslash-n normalization, bed centre from string and list printable_area, diff-list handling for serialized, list, and absent forms, settings IDs preserved, 9 patches, and Trident 300 and Switchwire 250 transforms.
 - GUI slicing is a separate, manual check, not covered here, because it needs a running Orca GUI and a real preset bundle.
+
+## License
+
+MIT.  See LICENSE.
 
 ## Not yet verified
 
