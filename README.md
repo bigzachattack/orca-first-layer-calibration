@@ -1,7 +1,5 @@
 # Orca First-Layer Calibration
 
-Author: Zachary Jones
-
 Version 0.3.6.  Requires Orca Slicer 2.5.0-rc or later, with the plugin system enabled.  Tested with Voron Trident 300 and Voron Switchwire 250, in Klipper setups.
 
 ## What it does
