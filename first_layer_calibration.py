@@ -5,7 +5,7 @@
 # [tool.orcaslicer.plugin]
 # name = "First Layer Calibration"
 # description = "Generate a 9-patch first-layer test as a 3MF project, with print by object and append-only Klipper Z-offset G-code in its profiles."
-# author = "Zach"
+# author = "Zachary Jones"
 # version = "0.3.6"
 # ///
 
