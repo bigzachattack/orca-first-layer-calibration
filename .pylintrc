@@ -1,0 +1,38 @@
+[MAIN]
+# orca only exists inside Orca Slicer.  Outside Orca the plugin
+# imports with orca = None, and that fallback is intentional.
+ignored-modules=orca
+
+[MESSAGES CONTROL]
+# Intentional for this plugin, not bugs:
+# - broad-exception-caught: the plugin must return a recoverable
+#   error to Orca, not crash on a bad preset value.
+# - consider-using-f-string: % formatting is used for G-code
+#   and 3MF strings, where it is clearer than f-strings.
+# - missing docstrings: test methods are self-describing
+#   from their names; the plugin itself is documented.
+# - protected-access: tests intentionally test the internal
+#   serialized-list parser, which is the bug-prone part.
+# - wrong-import-position: tests insert the repo root on
+#   sys.path before importing the plugin, by design.
+# - too-many-*: the geometry and plugin entry code is
+#   long by nature; the tests cover it.
+disable=broad-exception-caught,
+        consider-using-f-string,
+        missing-class-docstring,
+        missing-function-docstring,
+        protected-access,
+        wrong-import-position,
+        too-many-arguments,
+        too-many-positional-arguments,
+        too-many-locals,
+        too-many-branches,
+        too-many-statements,
+        too-many-return-statements,
+        too-few-public-methods,
+        invalid-name
+
+[FORMAT]
+# Long lines are mostly 3MF XML strings and the plugin
+# metadata description, which cannot be wrapped usefully.
+max-line-length=160

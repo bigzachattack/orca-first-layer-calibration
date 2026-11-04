@@ -258,7 +258,7 @@ def build_model_xml(step_mm, bed_center=(100.0, 100.0)):
     """
     objects_xml = []
     items_xml = []
-    for idx, (mult, offset, label, cx, cy) in enumerate(patch_specs(step_mm), start=1):
+    for idx, (_mult, _offset, label, cx, cy) in enumerate(patch_specs(step_mm), start=1):
         tris = patch_triangles(0.0, 0.0, label)
         # Deduplicate vertices by rounded coordinate.
         vindex = {}

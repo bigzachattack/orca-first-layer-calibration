@@ -66,6 +66,10 @@ Orca emits between-objects G-code only after an object finishes, not before the 
 - Text method is raised text, not cut-out text.  Layer 1 is the patch, layer 2 is the text.
 - Patch order, front to back, left to right: -4, -3, -2, -1, 0, +1, +2, +3, +4, where front is offset Y = -60.
 
+## Pylint
+
+- Lint config is in `.pylintrc`.  Run `pylint $(git ls-files '*.py')` locally.  The config disables only intentional cases: the Orca-only import, broad catches that must return a recoverable error to Orca, % formatting for G-code and 3MF strings, and test docstrings.
+
 ## Tests
 
 - Tests are in `tests/`, stdlib only, no Orca installation needed.
